@@ -1,11 +1,11 @@
-About drf-flex-fields
-=====================
+About drf-flex-fields-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/drf-flex-fields-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rsinger86/drf-flex-fields
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/drf-flex-fields-feedstock/blob/main/LICENSE.txt)
 
 Summary: Flexible, dynamic fields and nested resources for Django REST Framework serializers.
 
