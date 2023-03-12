@@ -1,5 +1,5 @@
 {% set name = "drf-flex-fields" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/drf-flex-fields-{{ version }}.tar.gz
-  sha256: bee9794dcb507e6baefcbe4490ceb4fc5ca034676966bfcd90a19eeef2f2266b
+  sha256: 48139eeff0b1232fc05a9f353c3c2b570b225985043dedda6ab0d5e8b7a1d7af
 
 build:
   noarch: python
