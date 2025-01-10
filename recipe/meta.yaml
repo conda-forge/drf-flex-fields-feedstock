@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/drf-flex-fields-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/drf-flex-fields-{{ version }}.tar.gz
   sha256: 48139eeff0b1232fc05a9f353c3c2b570b225985043dedda6ab0d5e8b7a1d7af
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   #imports:
@@ -30,6 +30,7 @@ test:
     - test -f $SP_DIR/rest_flex_fields/__init__.py
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/rsinger86/drf-flex-fields
